@@ -8,34 +8,22 @@ A professional web vulnerability scanner with a stunning cyberpunk GUI. Built fo
 
 ## ✨ Features
 
-### 🔍 Scanning Modules
-
-| Module | Description |
-|--------|-------------|
-| **Security Headers** | Checks CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy |
-| **Exposed Files** | Detects .git/config, .env, backups, phpinfo, admin panels, and 15+ sensitive files |
-| **Directory Enumeration** | Scans 25+ common directories (admin, backup, uploads, .git, wp-content, etc.) |
-| **SQL Injection** | Form-based and URL parameter testing with multiple payloads |
-| **XSS Detection** | Reflected cross-site scripting tests on input forms |
-| **Port Scanner** | Scans 16 common ports with service detection (FTP, SSH, MySQL, RDP, etc.) |
+### 🔍 6 Scanning Modules
+- **Security Headers** — CSP, HSTS, X-Frame-Options, X-Content-Type-Options, Referrer-Policy, Permissions-Policy
+- **Exposed Files** — .git/config, .env, backups, phpinfo, admin panels, 15+ sensitive files
+- **Directory Enumeration** — 25+ common directories (admin, backup, .git, wp-content, etc.)
+- **SQL Injection** — Form-based and URL parameter testing with multiple payloads
+- **XSS Detection** — Reflected cross-site scripting tests on input forms
+- **Port Scanner** — 16 ports with service detection (FTP, SSH, MySQL, RDP, etc.)
 
 ### 🎨 GUI Features
-
 - 🎯 Cyberpunk dark theme with live particle animations
-- 📊 Real-time severity statistics (Critical/High/Medium/Low/Info)
+- 📊 Real-time severity stats (Critical/High/Medium/Low/Info)
 - 🧪 One-click preset test targets
-- 🎨 Color-coded result cards with severity badges
 - 📁 Scan history with timestamps
 - 📊 Dashboard with scan analytics
 - 📥 One-click report export (.txt)
 - 📱 Fully responsive design
-- ⚡ Animated loading states
-
-## 📸 Screenshots
-
-![Dashboard](screenshots/demo.png)
-
-*More screenshots in the `/screenshots` folder*
 
 ## 🛠️ Tech Stack
 
@@ -45,34 +33,70 @@ A professional web vulnerability scanner with a stunning cyberpunk GUI. Built fo
 | Frontend | HTML5 + CSS3 + Vanilla JavaScript |
 | Scanning Engine | Requests, BeautifulSoup4, Socket |
 | Data Storage | JSON (scan history) |
-| Packaging | PyInstaller (standalone .exe) |
+| Packaging | PyInstaller (.exe) |
 
 ## 📦 Installation
 
-### Prerequisites
-- Python 3.8 or higher
-- pip (Python package manager)
-
-### Quick Start
-```bash
-# Clone the repository
 git clone https://github.com/MohidAkbar/VulnScanner.git
 cd VulnScanner
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Run the application
 python app.py
-Open your browser and go to: http://127.0.0.1:5000
+
+Open: http://127.0.0.1:5000
 
 Windows EXE
-Download the latest VulnScannerPro.exe from Releases and double-click to run.
+Download VulnScannerPro.exe from Releases and double-click. No Python required!
 
-No Python installation required!
+🎯 Usage
+Launch the application
 
+Enter a target URL or click a preset
+
+Click ▶ Scan Now
+
+View results with severity levels
+
+Click 📥 Export Report to download results
+
+Test Targets
+URL	Description
+https://testphp.vulnweb.com	Acunetix test site (safe to scan)
+http://scanme.nmap.org	Nmap port scan test
+https://httpbin.org	HTTP request testing
+
+📁 Project Structure
+text
+VulnScanner/
+├── app.py                 # Main Flask server
+├── scanner/
+│   ├── headers.py         # Security headers checker
+│   ├── files.py           # Exposed files scanner
+│   ├── dirs.py            # Directory enumeration
+│   ├── sqli.py            # SQL injection tests
+│   ├── xss.py             # XSS detection
+│   └── ports.py           # Port scanner
+├── templates/
+│   └── index.html         # Cyberpunk GUI
+├── requirements.txt       # Python dependencies
+└── README.md
+⚠️ Disclaimer
+FOR EDUCATIONAL AND AUTHORIZED TESTING ONLY. Only scan websites you own or have explicit permission to test. The author is not responsible for misuse.
+
+👨‍💻 Author
+Mohid Akbar
+
+🎓 BS Cybersecurity — UMT Lahore
+
+💼 LinkedIn
+
+📧 GitHub
 
 📄 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+MIT License
 
-⭐ If you find this useful, give it a star! ⭐
+⭐ Star this repo if you find it useful!
+
+
+---
+
+That's it. Paste this on GitHub README. Done! 🚀
