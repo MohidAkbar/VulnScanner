@@ -39,7 +39,9 @@ A professional web vulnerability scanner with a stunning cyberpunk GUI. Built fo
 
 ## 📦 Installation
 
-``bash
+
+```bash
+
 git clone https://github.com/MohidAkbar/VulnScanner.git
 cd VulnScanner
 pip install -r requirements.txt
