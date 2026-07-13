@@ -100,5 +100,3 @@ Mohid Akbar
 MIT License
 
 ⭐ Star this repo if you find it useful!
-
-text
