@@ -65,6 +65,8 @@ URL	Description
 https://testphp.vulnweb.com	Acunetix test site (safe to scan)
 http://scanme.nmap.org	Nmap port scan test
 https://httpbin.org	HTTP request testing
+
+```
 📁 Project Structure
 text
 VulnScanner/
@@ -80,6 +82,8 @@ VulnScanner/
 │   └── index.html         # Cyberpunk GUI
 ├── requirements.txt       # Python dependencies
 └── README.md
+```
+
 ⚠️ Disclaimer
 FOR EDUCATIONAL AND AUTHORIZED TESTING ONLY. Only scan websites you own or have explicit permission to test. The author is not responsible for misuse.
 
